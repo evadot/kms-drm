@@ -282,11 +282,15 @@ int amdgpu_sa_bo_new(struct amdgpu_sa_manager *sa_manager,
 	int i, r;
 	signed long t;
 
-	if (WARN_ON_ONCE(align > sa_manager->align))
+	if (WARN_ON_ONCE(align > sa_manager->align)) {
+		printf("%s: align=%d sa_manager->align=%d\n", __func__, align, sa_manager->align);
 		return -EINVAL;
+	}
 
-	if (WARN_ON_ONCE(size > sa_manager->size))
+	if (WARN_ON_ONCE(size > sa_manager->size)) {
+		printf("%s: size=%d sa_manager->size=%d\n", __func__, size, sa_manager->size);
 		return -EINVAL;
+	}
 
 	*sa_bo = kmalloc(sizeof(struct amdgpu_sa_bo), GFP_KERNEL);
 	if (!(*sa_bo))
