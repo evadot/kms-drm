@@ -12,8 +12,6 @@ SRCS=	atom.c \
 	atombios_i2c.c \
 	btc_dpm.c \
 	cayman_blit_shaders.c \
-	ci_dpm.c \
-	ci_smc.c \
 	cik.c \
 	cik_blit_shaders.c \
 	cik_sdma.c \

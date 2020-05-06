@@ -511,6 +511,7 @@ CWARNFLAGS.dc_link_ddc.c=	-Wno-unused-const-variable
 CWARNFLAGS.dc_link_dp.c=	-Wno-enum-conversion -Wno-missing-prototypes
 CWARNFLAGS.dc_resource.c=	-Wno-missing-braces
 CWARNFLAGS.dc_surface.c=	-Wno-int-conversion -Wno-missing-prototypes
+CWARNFLAGS.dcn10_hubp.c=	-Wno-missing-prototypes
 CWARNFLAGS.dce_virtual.c=	-Wno-missing-prototypes
 CWARNFLAGS.dce_aux.c=	-Wno-enum-conversion -Wno-missing-prototypes
 CWARNFLAGS.dce_v6_0.c=	-Wno-unused-const-variable -Wno-missing-prototypes
